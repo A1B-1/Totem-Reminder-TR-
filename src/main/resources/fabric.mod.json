@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "totem-reminder-1201",
+  "version": "${version}",
+  "name": "totem reminder",
+  "description": "Totem Reminder for PVP",
+  "authors": [
+    "_A1B"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/A1B-1/Totem-Reminder"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/totem-reminder-1201/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "name.modid.TotemReminder1201"
+    ],
+    "client": [
+      "name.modid.TotemReminder1201Client"
+    ]
+  },
+  "mixins": [
+    "totem-reminder-1201.mixins.json",
+    {
+      "config": "totem-reminder-1201.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
